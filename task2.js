@@ -7,10 +7,9 @@ const someObj = {
     true: false,
     some: undefined
 }
-let prop = '2';
 
 function property(str, obj) {
-    return prop in someObj;
+    return str in obj;
 }
 
-console.log(property(prop, someObj));
+console.log(property('some', someObj));
